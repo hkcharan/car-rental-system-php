@@ -1,0 +1,124 @@
+.details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    row-gap: 50px;
+}
+
+
+.details .box{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    color: white;
+}
+
+.box1{
+    background-color: #17a2b8;
+}
+
+.box2{
+    background-color: #32b817;
+}
+
+.box3{
+    background-color: #b517b8;
+}
+
+.box4{
+    background-color: #b8a017;
+}
+
+.box5{
+    background-color: #b8174a;
+}
+
+.box1 .more_info{
+    background-color: #1491a4;
+}
+
+.box2 .more_info{
+    background-color: #2ca613;
+}
+
+.box3 .more_info{
+    background-color: #9e12a0;
+}
+
+.box4 .more_info{
+    background-color: #a38e14;
+}
+
+.box5 .more_info{
+    background-color: #9c133f;
+}
+
+.box_desc{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 110px;
+    gap: 30px;
+}
+
+
+.box_icon i{
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 30px;
+    color: #ffffff9d;
+}
+
+.box_info p{
+    font-weight: 600;
+}
+
+.more_info{
+    width: 100%;
+    border-top: 2px solid rgb(255, 255, 255);
+    background-color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.815);
+}
+
+
+.more_info:hover i{
+    transform: translateX(5px);
+}
+
+.charts{
+    margin: 50px 0;
+    padding:50px 20px;
+}
+
+.charts h1{
+    color: gray;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#chartContainer{
+    height: 370px;
+     width: 100%;
+}
+
+

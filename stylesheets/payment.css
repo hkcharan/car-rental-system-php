@@ -1,0 +1,227 @@
+.payment_form{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.payment_car_img {
+    padding: 10px;
+    position: relative;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: hidden;
+}
+
+.payment_car_img .payment_car{
+    border-radius: 10px;
+    width: 500px;
+}
+
+.payment_car_img .payment_brand{
+    width: 150px;
+}
+
+.payment_car_details h3{
+    text-transform:uppercase;
+    color: yellow;
+    font-weight: 600;
+}
+
+.payment_car_img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    display: none;
+}
+
+.payment_car_details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    display: none;
+}
+
+.payment_car_img:hover::before {
+    display: block;
+}
+
+.payment_car_img:hover .payment_car_details {
+    display: block;
+}
+
+.payment_flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.invoice{
+    padding: 15px;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.307);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+}
+
+.invoice_details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.invoice_details li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.invoice_details li span{
+    font-weight: 550;
+    color: rgba(0, 0, 0, 0.516);
+}
+ 
+.invoice_details .last_total span {
+    color: #000000;
+    font-size: large;
+    font-weight: 600;
+}
+
+
+.payment_heading{
+    color: #000000;
+}
+
+.payment_form hr{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.148);
+    height: 1.5px;
+}
+
+.payment_form p{
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.712);
+    font-weight: 600;
+}
+
+.payment_form form{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.payment_modes_box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment_mode{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    padding: 7px 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.085);
+    border: 2px solid rgba(1, 1, 1, 0);
+}
+
+.payment_mode:hover{
+    border: 2px solid rgba(1, 1, 1, 0.185);
+}
+
+.payment_mode label{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+    color: black;
+    font-weight: 600;
+    width: 100%;
+}
+
+.payment_mode svg{
+    height: 50px;
+    width: 50px;
+}
+
+.pay_btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    background-color: green;
+
+}
+
+.pay_cancel_btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    background-color: rgb(255, 25, 0);
+
+}
+
+.pay_btn a{
+    font-size: 20px;
+}
+
+.btn-pay {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: hsla(194 100% 69% / 1);
+    --btn-bg-2: hsla(217 100% 56% / 1);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 300px;
+    min-height: 40px;
+    font-size: var(--size, 1rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .btn-pay:hover {
+    background-position: right top;
+  }
+  
+  .btn-pay:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn-pay {
+      transition: linear;
+    }
+  }
+  

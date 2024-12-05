@@ -1,0 +1,431 @@
+.brand_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form {
+    background-color: #fff;
+    display: block;
+    padding: 1rem;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #6B7280;
+}
+
+.input-container input,
+.form button {
+    outline: none;
+    border: 1px solid #e5e7eb;
+    margin: 8px 0;
+}
+
+.input-container input {
+    background-color: #fff;
+    padding: 1rem;
+    padding-right: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.submit {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #4F46E5;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+
+.table{
+    height: 500px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #009879;
+    border-radius: 5px;
+}
+
+.content-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 500px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table thead{
+    position: sticky;
+    top: 0;
+}
+
+.content-table tbody{
+    overflow-y: scroll;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr:hover td {
+    color: #009879;
+}
+
+.content-table button {
+    background-color: red;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+
+.content-table button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.brandlogo{
+    width: 70px;
+}
+
+
+
+
+/* ============================================== ADD CARS ============================================== */
+
+
+.addcontainer{
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.addcontainer form{
+    display: flex;
+    align-items:left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.form_container{
+    display: flex;
+    gap: 90px;
+    height: 500px;
+}
+
+.input{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.addcontainer input{
+    border: 2px solid rgb(139, 139, 139);
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding-inline: 10px;
+}
+
+.set1, .set2, .set3 ,.set4{
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.set4 input{
+    border: none;
+}
+
+select {
+    border: 2px solid rgb(139, 139, 139);
+    height: 40px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.addcontainer form button{
+    width: 100%;
+    height: 40px;
+    background-color: #4F46E5;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+}
+
+.addcontainer form button:hover ,
+.submit:hover{
+    background-color: #026a55;
+}
+
+
+.delete{
+    background-color: red;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+
+.content-table .update{
+    background-color: rgb(0, 110, 255);
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+
+.delete a ,
+.update a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+/* =================================================== Manage Bookings ======================================================= */
+
+
+.approved{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgb(0, 57, 243);
+}
+
+.rejected{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgb(223, 0, 0);
+}
+
+.verification_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.verify_heading{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #009879;
+    color: #009879;
+    font-size: larger;
+    font-weight: 700;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.v_user_details_container{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.v_left{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 7px;
+    height: max-content;
+}
+
+.v_details{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+}
+
+.v_details p{
+    color: #6B7280;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 50px;
+}
+
+.v_details p span{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.v_details p i{
+    margin-right: 10px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.verifyUser{
+    background-color: #009879;
+    padding:10px 100px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 7px;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.removeVerify{
+    background-color: #ff0000;
+    padding:10px 100px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 7px;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.verifyUser:hover{
+    background-color: #026450;
+}
+
+.status{
+    font-weight: 600;
+}
+
+.pending{
+    text-transform: capitalize;
+    background-color: orangered;
+    padding: 7px 15px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+}
+
+.verified{
+    text-transform: capitalize;
+    background-color: rgb(9, 255, 0);
+    padding: 7px 15px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+}
+
+.v_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 30px;
+}
+
+.v_image_box{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+}
+
+.v_image_box label{
+    font-weight: 600;
+}
+
+.v_image_box img{
+    width: 400px;
+}
+
+.remark_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 500px;
+    gap: 20px;
+    height: max-content;
+}
+
+.remark_box textarea{
+    width: 100%;
+    resize: none;
+    padding: 20px;
+    font-weight: 600;
+    border-radius: 7px;
+}
+
+.remark_box button{
+    padding: 7px 0;
+    width: 100%;
+    border-radius: 7px;
+    background-color: #4F46E5;
+    font-size: larger;
+    font-weight: 600;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.remark_box button:hover{
+    background-color: #3831c3;
+}
+

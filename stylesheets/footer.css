@@ -1,0 +1,196 @@
+.footer_container{
+    margin: 20px 50px;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.social_box{
+    height: 300px;
+    width: 340px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.social1{
+background: linear-gradient(rgba(0, 0 ,0, 0.4) , rgba(0, 0 ,0 ,0.4)), url(../images/social1.jpg);
+background-size: cover;
+}
+
+.social2{
+    background:linear-gradient(rgba(0, 0 ,0, 0.4) , rgba(0, 0 ,0 ,0.4)), url(../images/social2.jpg);
+    background-size: cover;
+}
+
+.social3{
+    background:linear-gradient(rgba(0, 0 ,0, 0.4) , rgba(0, 0 ,0 ,0.4)), url(../images/social3.jpg);
+    background-size: cover;
+}
+
+.social4{
+    background: linear-gradient(rgba(0, 0 ,0, 0.4) , rgba(0, 0 ,0 ,0.4)),url(../images/social4.jpg);
+    background-size: cover;
+}
+
+
+.social_box i{
+    font-size: 60px;
+    color: white;
+}
+
+.social_box h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 25px 0 5px;
+}
+
+.social_box p{
+    margin: 5px 0 25px;
+    font-weight: 600;
+    color: rgb(195, 195, 195);
+}
+
+.social_box button{
+    border: 2px solid rgb(138, 138, 138);
+    background-color: transparent;
+    color: yellow;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.social1 i{
+    color: rgb(255, 0, 191);
+}
+
+.social2 i{
+    color: rgb(0, 102, 255);
+}
+
+.social3 i{
+    color: rgb(255, 255, 255);
+}
+
+.social4 i{
+    color: rgb(255, 0, 0);
+}
+
+.social_box button:hover{
+  border: 2px solid white;
+}
+
+
+.fcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 100px 0;
+}
+
+.fmain{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.fitems{
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.fitems h4{
+    color: yellow;
+    position: relative;
+}
+
+.fitems h4::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 2px;
+    background-color: white;
+}
+
+.fitems ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fitems li{
+    transition: .4s;
+    display: flex;
+    gap: 15px;
+}
+
+.fitems li:hover{
+    transform: translateX(10px);
+}
+
+.flast{
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+.flast h4{
+    font-size: 20px;
+}
+
+.flast p{
+    color: rgb(158, 158, 158);
+}
+
+.fbox{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.fbox input{
+    height: 40px;
+    width: 250px;
+    padding: 0 15px;
+    color: black;
+    font-size: 17px;
+}
+
+.fbox button{
+    height: 40px;
+    padding: 0 20px;
+    background-color: yellow;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.fbox button:hover{
+    transform: scale(1.1);
+}
+
+.fitems ul a{
+    text-decoration: none;
+    color: white;
+}
+

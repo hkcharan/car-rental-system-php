@@ -1,0 +1,164 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+.image_container{
+  display: flex;
+  align-items: center;  
+}
+
+.big_img{
+  width: 700px;
+  margin: 50px 30px;
+  border-radius: 20px;
+  height: 435px;
+  overflow: hidden;
+}
+
+.big_img img{
+ width: 100%;
+ object-fit: cover;
+ border-radius: 15px;
+ transition: .4s;
+}
+
+.big_img:hover img{
+  transform: scale(1.2);
+}
+
+.small_img{
+  position: relative;
+  height: 435px;
+  width: 720px;
+  margin-right: 60px;
+}
+
+.car_logo{
+  margin-right: 30px;
+  width: 150px;
+  transition: .1s;
+}
+
+.car_logo:hover{
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px black);
+}
+
+ .car_logo img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.car_images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.089);
+  border-radius: 7px;
+}
+
+.car_images img{
+  width: 165px;
+  border-radius: 7px;
+  transition: .3s;
+}
+
+.car_images img:hover{
+  box-shadow: 0 10px 10px rgb(0, 0, 0);
+  transform: translateY(-15px);
+}
+
+.car_content {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.089);
+  padding: 20px 0 20px 25px;
+  border-radius: 10px;
+}
+
+.car_content h1{
+  font-size: 25px;
+  color: yellow;
+  position: relative;
+  padding-left: 25px;
+  text-transform: uppercase;
+}
+
+.car_content h2{
+  font-size: 25px;
+  margin-top: 10px;
+  padding-left: 24px;
+  text-transform: capitalize;
+}
+
+.car_content h1::before{
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 4px;
+  background-color: yellow;
+  bottom: 0;
+  left: 0;
+}
+
+.small_img a{
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  width: 100%;
+  background: yellow;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  border: none;
+  border-radius: 7px;
+  transition: .3s;
+}
+
+.small_img a:hover{
+  background: white;
+}
+
+.details_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxes{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap : 45px;
+  padding-bottom: 100px;
+}
+
+.box{
+  height: 200px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.107);
+  border-radius: 15px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.box h3{
+  text-transform: capitalize;
+}
+
+.box:hover {
+  background-color: rgba(255, 255, 255, 0.204);
+}
+
+.box h5{
+  color: rgb(127, 127, 127);
+}
+

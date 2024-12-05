@@ -1,0 +1,115 @@
+.contact_container{
+    width: 100%;
+    height:100vh;
+    background: linear-gradient(rgba(0, 0 ,0, 0.6) , rgba(0, 0, 0, 0.6)),url(../images/Home_img.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.right_contact .contactform{
+    width: 500px;
+    padding: 30px;
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 3px;
+}
+
+.contactform h1{
+    text-align: center;
+}
+
+.contact_input{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact_input label{
+    font-weight: 500;
+    color: yellow;
+    font-weight: 500;
+}
+
+.contact_input input{
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.584);
+    border-radius: 3px;
+    padding-inline-start: 20px;
+    font-size: 17px;
+}
+
+.contact_input input:focus{
+    background-color: rgba(240, 248, 255, 0.274);
+}
+
+
+.contact_input textarea{
+    background-color: transparent;
+    border: 2px solid white;
+    resize: none;
+    border-radius: 3px;
+    padding-inline: 20px;
+    font-size: 17px;
+}
+
+.contact_btn{
+    background-color: yellow;
+    text-align: center;
+    color: black;
+    padding: 10px 0;
+    border-radius: 3px;
+    font-size: large;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.contact_btn:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+.left_contact{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: left;
+}
+
+.contact_content{
+    display: flex;
+    gap: 30px;
+}
+
+.contact_info{
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.contact_info span{
+    color: yellow;
+}
+
+.contact_icon{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
+
+.contact_icon i{
+    color: black;
+}
+

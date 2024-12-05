@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  color: white;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar{
+  width: 0;
+  display: hidden;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 60px 10px 10px;
+  background-color: rgb(0, 0, 0);
+}
+
+
+.home {
+  background: url(../images/Home_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.home h1 {
+  position: absolute;
+  top: 100px;
+  font-size: 90px;
+  color: transparent;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(125, 125, 125, 0.23021708683473385) 75%, rgba(0, 0, 0, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  z-index: 2;
+}
+
+.search_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  gap: 40px;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: rgb(28, 28, 28);
+  margin-top: 50px;
+}
+
+.search_desc{
+  font-size: 20px;
+}
+
+.inputbox {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputbox input , .inputbox select{
+  padding-inline: 20px;
+  font-size: 18px;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.inputbox label{
+  font-size: 18px;
+  color: yellow;
+  font-weight: 600;
+}
+
+.search_btn {
+  position: absolute;
+  bottom: -10%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 50px;
+  background-color: yellow;
+  border-radius: 9999px;
+  cursor: pointer;
+  color: #000000;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.search_btn:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+
+.search_btn::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.search_btn::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%);
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+
+.about_btn {
+  position: absolute;
+  bottom: 178px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  backdrop-filter: blur(2px);
+  border-radius: 5px;
+}
+
+.about_btn:hover {
+  background: rgb(24, 24, 24);
+}
+
+.social_btn {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  gap: 30px;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 20px 10px;
+  top: 38vh;
+  left: 75px;
+  backdrop-filter: blur(10px);
+}
+
+.fa-instagram:hover {
+  color: rgb(217, 25, 208);
+}
+
+.fa-whatsapp:hover {
+  color: rgb(0, 255, 0);
+}
+
+.fa-facebook-f:hover {
+  color: rgb(0, 94, 255);
+}
+
+
+
+/* ////////-------------BRAND SECTION--------------/////////// */
+
+.heading h3 {
+  font-size: 25px;
+  color: yellow;
+}
+
+.heading {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.heading::before {
+  content: "";
+  position: absolute;
+  top: 12.5px;
+  left: 100%;
+  width: 400px;
+  height: 3px;
+  background-color: white;
+  margin: 0 40px;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  top: 12.5px;
+  right: 100%;
+  width: 400px;
+  height: 3px;
+  background-color: white;
+  margin: 0 40px;
+}
+
+
+.brands_container {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.brand_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  background-color: rgb(28, 28, 28);
+  padding: 5px 25px;
+  border-radius: 10px;
+  margin: 30px 50px;
+  width: 360px;
+}
+
+.brand_logo {
+  width: 100px;
+}
+
+.brand_name {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.brand_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand_name span {
+  margin-left: 20px;
+}
+
+.brand_name span i {
+  color: rgb(186, 186, 186);
+  transition: all .3s;
+}
+
+.brand_name a {
+  color: rgb(186, 186, 186);
+  cursor: pointer;
+}
+
+.brand_item:hover {
+  background-color: rgba(72, 72, 72, 0.63);
+}
+
+.brand_item:hover .brand_name a {
+  color: rgb(255, 213, 0);
+}
+
+.brand_item:hover .brand_name span i {
+  color: rgb(255, 213, 0);
+  transform: translateX(15px);
+}
+
+.service_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90vw;
+  margin-top: 55px;
+}
+
+.service {
+  display: flex;
+  align-items: first baseline;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  border-radius: 15px;
+  transition: .4s;
+}
+
+.service:hover {
+  transform: translateY(-25px);
+  border-bottom: 5px solid yellow;
+}
+
+.service h3 {
+  margin-bottom: 18px;
+  margin-left: 20px;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+.s1 {
+  background: url(../images/s1.jpg);
+  background-size: cover;
+}
+
+.s2 {
+  background: url(../images/s2.jpeg);
+  background-size: cover;
+}
+
+.s3 {
+  background: url(../images/s3.jpg);
+  background-size: cover;
+}
+
+.s4 {
+  background: url(../images/s4.jpg);
+  background-size: cover;
+}
+
+.sbtn {
+  width: 150px;
+  height: 35px;
+  color: black;
+  background: yellow;
+  border-radius: 5px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.why_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.why {
+  margin-top: 50px;
+  width: 350px;
+  height: 350px;
+  border-radius: 25px;
+  border: 3px solid yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.why i {
+  font-size: 60px;
+}
+
+.why h4 {
+  font-size: 23px;
+}
+
+.why p {
+  font-size: 15px;
+  padding: 0 20px;
+}

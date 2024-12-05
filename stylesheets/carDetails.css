@@ -1,0 +1,119 @@
+
+.image_container{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.big_img_container{
+    width: 700px;
+    border-radius: 20px;
+    height: 435px;
+    overflow: hidden;
+}
+
+.big_img_container img{
+    width: 100%;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.big_img_container img:hover{
+    transform: scale(1.2);
+}
+
+.small_img_container{
+    padding: 25px;
+    width: 700px;
+    border-radius: 10px;
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.car_images_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.car_images_container img{
+    width: 150px;
+    border-radius: 5px;
+}
+
+.car_images_container img:hover{
+    transform: translateY(-15px);
+}
+
+
+.info_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.car_information{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.car_name h3{
+    font-weight: 800;
+    color: yellow;
+}
+
+.brand_logo img{
+    width: 120px;
+}
+
+.car_details_btn{
+    width: 100%;
+    border-radius: 5px;
+    background-color: yellow;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    transition: .3s;
+}
+
+.car_details_btn:hover{
+    background-color: transparent;
+    background-color: rgb(0, 255, 34);
+    color: rgb(0, 0, 0);
+}
+
+.key_info{
+    margin-top: 80px;
+    width: 100%;
+}
+
+.key_info_boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info_box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    gap: 20px;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.107);
+    border-radius: 15px;
+    text-transform: capitalize;
+}
+
+.info_box h5{
+    color: rgb(127, 127, 127);
+  }
+
+  .info_box:hover{
+    background-color: transparent;
+    border: 2px solid yellow;
+  }
