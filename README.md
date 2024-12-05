@@ -92,7 +92,7 @@ Royal Rentals is a luxury car rental system designed for users to rent high-end 
 
 2. **Navigate to the Project Directory:**
   ```bash
-  cd car-rental-system-php
+   cd car-rental-system-php
 ```
 
 3. Set Up the Database
@@ -103,10 +103,10 @@ Royal Rentals is a luxury car rental system designed for users to rent high-end 
 Open the config.php file in the project directory.
 Update the database connection details with your MySQL credentials:
 ```php
-$servername = "localhost";
-$username = "your_db_username";
-$password = "your_db_password";
-$dbname = "royal_rentals";
+   $servername = "localhost";
+   $username = "your_db_username";
+   $password = "your_db_password";
+   $dbname = "royal_rentals";
 ```
 
 5. Start the Server
@@ -116,17 +116,16 @@ $dbname = "royal_rentals";
 6. Access the Application
 Open your web browser and navigate to:
 ```bash
-http://localhost/car-rental-system-php
+   http://localhost/car-rental-system-php
 ```
 
 ---
 
 📊 Admin Dashboard
 The admin dashboard provides a comprehensive overview of the system's activity:
-
-Number of bookings.
-  - User verification requests.
-  - Rental trends by brand and time period.
+   - Number of bookings.
+   - User verification requests.
+   - Rental trends by brand and time period.
 
 ---
 
