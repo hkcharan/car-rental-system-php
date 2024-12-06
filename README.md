@@ -102,12 +102,12 @@ Royal Rentals is a luxury car rental system designed for users to rent high-end 
 4. Configure Database Connection
 Open the config.php file in the project directory.
 Update the database connection details with your MySQL credentials:
-```php
+   ```php
    $servername = "localhost";
    $username = "your_db_username";
    $password = "your_db_password";
    $dbname = "royal_rentals";
-```
+   ```
 
 5. Start the Server
   - Use a local server environment like XAMPP, WAMP, or MAMP to run the PHP project.
@@ -115,9 +115,9 @@ Update the database connection details with your MySQL credentials:
 
 6. Access the Application
 Open your web browser and navigate to:
-```bash
+   ```bash
    http://localhost/car-rental-system-php
-```
+   ```
 
 ---
 
