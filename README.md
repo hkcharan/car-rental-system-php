@@ -91,9 +91,9 @@ Royal Rentals is a luxury car rental system designed for users to rent high-end 
    ```
 
 2. **Navigate to the Project Directory:**
-  ```bash
+   ```bash
    cd car-rental-system-php
-```
+   ```
 
 3. Set Up the Database
   - Create a new MySQL database.
